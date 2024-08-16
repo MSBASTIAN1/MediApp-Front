@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".activities.RecommendationsActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/recommendationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envíanos tu recomendación"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primary_text_color"
+        android:textAlignment="center" />
+
+    <!-- Campo para el título del problema -->
+    <EditText
+        android:id="@+id/problemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título del problema o recomendación"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/recommendationTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp" />
+
+    <!-- Campo para la descripción -->
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:minHeight="100dp"
+        android:layout_below="@id/problemTitle"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp" />
+
+    <!-- Campo para el correo electrónico -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/description"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp" />
+
+    <!-- Botón de enviar -->
+    <Button
+        android:id="@+id/sendRecommendationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Recomendación"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/email"
+        android:layout_marginTop="30dp"
+        android:elevation="5dp"
+        android:textAllCaps="false"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+</RelativeLayout>

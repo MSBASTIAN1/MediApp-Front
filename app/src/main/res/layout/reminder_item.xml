@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:elevation="4dp"
+    android:background="@drawable/card_background"
+    android:layout_marginBottom="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewMedicament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicamento: Amoxicilina"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad: 3 tabletas"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: 2024-08-05"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora: 10:00:00"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textViewFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frecuencia: Diario"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Activo"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción: Tomar con agua"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Contenedor para los botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Botón para editar el recordatorio -->
+        <ImageButton
+            android:id="@+id/buttonEditReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Editar Recordatorio"
+            android:layout_weight="1"
+            android:layout_gravity="start" />
+
+        <!-- Botón para eliminar el recordatorio -->
+        <ImageButton
+            android:id="@+id/buttonDeleteReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Eliminar Recordatorio"
+            android:layout_weight="1"
+            android:layout_gravity="end" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".activities.RemindersActivity">
+
+    <!-- Título y botón de añadir recordatorio en la parte superior -->
+    <TextView
+        android:id="@+id/remindersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordatorios"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Lista de recordatorios en tarjetas -->
+
+    <Button
+        android:id="@+id/buttonAddNewReminder"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remindersTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="5dp"
+        android:text="+"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listViewReminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddNewReminder"
+        android:layout_marginTop="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Modal para agregar/editar un recordatorio -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:id="@+id/layoutAddEditReminder"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/modalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Recordatorio"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/editTextMedicament"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicamento"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha (YYYY-MM-DD)"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hora (HH:MM:SS)"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Frecuencia"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:background="@drawable/edit_text_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Botón Guardar -->
+            <Button
+                android:id="@+id/buttonSaveReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:background="@drawable/rounded_button"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:elevation="5dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

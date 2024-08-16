@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Usuario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/registerTitle"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su apellido"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/lastName"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/email"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su número de celular"
+        android:inputType="phone"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Registrarse"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:elevation="5dp"
+        android:textAllCaps="false"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+</RelativeLayout>

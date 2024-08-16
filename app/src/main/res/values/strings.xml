@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MediApp</string>
+    <string name="login">MediApp</string>
+    <string name="register">Registro</string>
+    <string name="first_name"> Ingrese su nombre</string>
+    <string name="last_name">Ingrese su apellido</string>
+    <string name="email">Ingrese su email</string>
+    <string name="password">Ingrese su contraseña</string>
+    <string name="phone_number">Ingrese su número de celular</string>
+    <string name="all_fields_required">Todos los campos son requeridos</string>
+    <string name="login_successful">Ingreso correctamente</string>
+    <string name="invalid_credentials">Email o Contraseña incorrectos</string>
+    <string name="registration_failed">Fallo al registrarse</string>
+    <string-array name="reminder_status_array">
+        <item>En progreso</item>
+        <item>Completado</item>
+        <item>Adquirir más medicina</item>
+    </string-array>
+</resources>
